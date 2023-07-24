@@ -1,0 +1,5 @@
+version: 2
+
+models:  
+  - name: fct_revenue_summary
+  - name: orders_rollup
