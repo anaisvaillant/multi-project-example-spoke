@@ -1,1 +1,2 @@
-select count(*) from {{ ref('snowflake_hub', 'dim_customers')}}
+select count(*) as customer_count
+from {{ ref('snowflake_hub', 'dim_customers')}}
