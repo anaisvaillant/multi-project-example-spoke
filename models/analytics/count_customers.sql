@@ -1,0 +1,1 @@
+select count(*) from {{ ref('snowflake_hub', 'dim_customers')}}
