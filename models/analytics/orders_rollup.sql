@@ -3,5 +3,5 @@ select
         month(order_date) as month,
         day(order_date) as day,
         sum(net_item_sales_amount) as total_revenue
-from {{ ref('snowflake_hub', 'fct_orders') }}
+from {{ ref('anais_sandbox', 'fct_orders') }}
 group by 1,2,3
