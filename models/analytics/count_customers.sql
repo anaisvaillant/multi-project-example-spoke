@@ -1,2 +1,2 @@
 select count(*) as customer_count
-from {{ ref('anais_sandbox', 'dim_customers')}}
+from {{ ref('snowflake_hub', 'dim_customers')}}
